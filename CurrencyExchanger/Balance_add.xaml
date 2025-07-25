@@ -1,0 +1,15 @@
+﻿<Window x:Class="CurrencyExchanger.Balance_add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CurrencyExchanger"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Loaded="OnLoad"
+        mc:Ignorable="d"
+        Title="Добавить денег" Height="250" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="countBox" materialDesign:HintAssist.Hint="Введите количество денег" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10,54,9.6,124" PreviewTextInput="countBox_PreviewTextInput"></TextBox>
+        <Button x:Name="AddBalance" Content="Добавить" Margin="10,114,9.6,45" Height="Auto" Click="AddBalance_Click" ></Button>
+    </Grid>
+</Window>
